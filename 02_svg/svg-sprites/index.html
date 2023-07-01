@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="import" href="sprite.svg">
+  <title>SVG-sprites</title>
+</head>
+
+<body>
+  <main class="main">
+    <div class="container main_container">
+      <h1 class="section_title main_title">
+        Как это работает?
+      </h1>
+      <ul class="list-reset action_list flex">
+        <li class="action_item flex">
+          <svg width="375" height="288" viewBox="0 0 375 288" class="item_svg">
+            <use xlink:href="./sprite.svg#coffee"></use>
+          </svg>
+          <h2 class="subsection_title action_title">
+            Утренний <b class="subsection_title_color">кофе</b>
+          </h2>
+          <p class="section_descr">
+            Кофеин воздействует на центральную нервную систему как природный “будильник”. Поэтому мы быстрее
+            просыпаемся.
+          </p>
+        </li>
+        <li class="action_item flex">
+          <svg width="375" height="288" viewBox="0 0 375 288" class="item_svg">
+            <use xlink:href="./sprite.svg#meditating"></use>
+          </svg>
+          <h2 class="subsection_title action_title">
+            Час <b class="subsection_title_color">медитации</b>
+          </h2>
+          <p class="section_descr">
+            После практик оба полушария мозга начинают работать сбалансированно — это привносит порядок в вашу жизнь.
+          </p>
+        </li>
+        <li class="action_item flex">
+          <svg width="375" height="288" viewBox="0 0 375 288" class="item_svg">
+            <use xlink:href="./sprite.svg#sprinting"></use>
+          </svg>
+          <h2 class="subsection_title action_title">
+            Вперёд к <b class="subsection_title_color">свершениям!</b>
+          </h2>
+          <p class="section_descr">
+            Ресурсы каждого человека ограничены, поэтому нам необходимо беречь себя и вовремя останавливаться.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <div class="container footer_container flex">
+      <div class="footer_content flex">
+        <h2 class="section_title footer_title">
+          Интеграция со сторонними сервисами
+        </h2>
+        <p class="section_descr">
+          Поможет всегда оставаться в курсе всех событий, быть максимально эффективным на протяжении всего рабочего дня,
+          контролировать свои задачи и не опоздать на запланированные встречи.
+        </p>
+      </div>
+      <div class="footer_background">
+        <svg width="550" height="275" viewBox="0 0 550 275">
+          <use xlink:href="./sprite.svg#ellipse"></use>
+        </svg>
+      </div>
+      <div class="footer_social flex">
+        <ul class="list-reset social_list flex">
+          <li class="social_item">
+            <a href="#" target="_blank" class="social_link">
+              <svg width="70" height="70" viewBox="0 0 70 70" class="social_svg">
+                <use xlink:href="./sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social_item">
+            <a href="#" target="_blank" class="social_link">
+              <svg width="70" height="70" viewBox="0 0 70 70" class="social_svg">
+                <use xlink:href="./sprite.svg#trello_red"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social_item">
+            <a href="#" target="_blank" class="social_link">
+              <svg width="70" height="70" viewBox="0 0 70 70" class="social_svg">
+                <use xlink:href="./sprite.svg#worklio"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social_item">
+            <a href="#" target="_blank" class="social_link">
+              <svg width="70" height="70" viewBox="0 0 70 70" class="social_svg">
+                <use xlink:href="./sprite.svg#dropbox"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-reset social_list flex">
+          <li class="social_item">
+            <a>
+              <svg width="70" height="70" viewBox="0 0 70 70" class="social_svg">
+                <use xlink:href="./sprite.svg#google"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social_item">
+            <a href="#" target="_blank" class="social_link">
+              <svg width="70" height="70" viewBox="0 0 70 70" class="social_svg">
+                <use xlink:href="./sprite.svg#trello"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social_item">
+            <a href="#" target="_blank" class="social_link">
+              <svg width="70" height="70" viewBox="0 0 70 70" class="social_svg">
+                <use xlink:href="./sprite.svg#slack"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
