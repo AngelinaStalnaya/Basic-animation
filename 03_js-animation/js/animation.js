@@ -91,9 +91,9 @@ burger.onclick = function() {
 };
 
 closeMenu.onclick = function() {
-  (menuSub.reverse(),
-  menuMain.reverse().then(toggleMenuOpen),
-  menuTop.delay(1).reverse());
+  menuSub.reverse();
+  menuMain.reverse().then(toggleMenuOpen);
+  menuTop.delay(1).reverse();
 };
 
 
