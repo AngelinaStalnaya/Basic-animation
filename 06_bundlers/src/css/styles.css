@@ -1,0 +1,14 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+}
+
+.magnifier {
+  display: flex;
+  justify-content: center;
+}

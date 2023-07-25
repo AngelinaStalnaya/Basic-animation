@@ -1,0 +1,10 @@
+body {
+  color: #245512;
+  font-size: 30px;
+}
+
+h2 {
+  color: black;
+  display: flex;
+  justify-content: center;
+}
