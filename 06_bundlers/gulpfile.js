@@ -46,8 +46,6 @@ const htmlMinify = () => {
     .pipe(dest('dist'))
     .pipe(browserSync.stream())
 };
-// для дев - не обфусцироваль(аглифай) и не минимация(cssmin) + сорсмапы
-// для прода - мин + афусц
 
 const svgSprites = () => {
     return src('src/img/**/*.svg')
