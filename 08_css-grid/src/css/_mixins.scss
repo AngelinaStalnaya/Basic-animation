@@ -1,0 +1,217 @@
+@import "_variables.scss";
+
+@mixin clearspaces {
+  margin: 0 auto;
+  padding: 0;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin section-padding {
+  padding: 0 calc((100% - 1290px) / 2);
+  margin: 0 auto;
+
+  @media (max-width: 1440px) {
+    padding: 0 calc((100% - 962px) / 2);
+  }
+
+  @media (max-width: 992px) {
+    padding: 0 27px;
+  }
+
+  @media(max-width: 560px) {
+    padding: 0 21px;
+  }
+
+}
+
+@mixin section__title {
+  margin: 0;
+  font-family: 'TTFirsNeue';
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 700;
+  color: $grayBlack;
+
+  @media  (max-width: 750px) {
+    font-size: 18px;
+  }
+}
+
+@mixin subsection__title {
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: $grayLight;
+}
+
+@mixin section__descr {
+  margin: 0;
+  font-family: 'TTFirsNeue';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: $white;
+
+  @media (max-width: 560px) {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+
+@mixin button__color {
+  display: inline-flex;
+  max-height: 50px;
+  width: fit-content;
+  padding: 15px 22px;
+  align-items: center;
+  gap: 10px;
+  background-color: $orangeLight;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  color: $white;
+  border: transparent;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &:focus {
+    background-color: $orangeLight;
+    border: 3px solid $orangeMiddle;
+  }
+
+  &:hover {
+    background-color: $orangeDark;
+    border:  transparent;
+  }
+
+  &:active {
+    background-color: $orangeMiddle;
+    border:  transparent;
+  }
+
+  @media (max-width: 560px) {
+    font-size: 14px;
+    max-height: 40px;
+  }
+}
+
+@mixin button__transparent {
+  display: inline-flex;
+  box-sizing: border-box;
+  max-height: 50px;
+  width: fit-content;
+  padding: 15px 20px;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  color: $white;
+  border: 3px solid $orangeLight;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &:focus {
+    background-color: $orangeDark;
+    border: 3px solid $orangeLight;
+  }
+
+  &:hover {
+    background-color: $orangeLight;
+    border:  transparent;
+  }
+
+  &:active {
+    background-color: $orangeMiddle;
+    border: transparent;
+  }
+
+  @media (max-width: 560px) {
+    font-size: 14px;
+    max-height: 40px;
+  }
+}
+
+@mixin tag {
+  position: absolute;
+  z-index: 2;
+  background-color: $grayBlack;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: $white;
+  bottom: auto;
+  left: auto;
+
+  @media (max-width: 560px) {
+    font-size: 12px;
+  }
+}
+
+@mixin form__title {
+  @include section__title;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+@mixin form__input {
+  @include section__descr;
+  font-family: 'Roboto';
+  padding: 15px 23px;
+  border: none;
+  max-height: 50px;
+  align-items: flex-start;
+  background-color: $whiteGray;
+  margin-bottom: 20px;
+  color: $grayMiddle;
+
+  @media (max-width: 1440px) {
+    margin-bottom: 18px;
+  }
+
+  @media (max-width: 560px) {
+    padding: 12px 23px;
+    max-height: 40px;
+    font-size: 14px;
+    line-height: normal;
+  }
+}
+
+@mixin btn-close {
+  & circle {
+    fill: $grayMiddle;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  & rect {
+    fill: $white;
+  }
+
+  &:focus circle {
+    fill: $orangeDark;
+  }
+
+  &:hover circle {
+    fill: $orangeLight;
+  }
+
+  &:active circle {
+    fill: $orangeMiddle;
+  }
+}
